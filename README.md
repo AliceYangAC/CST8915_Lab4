@@ -20,6 +20,6 @@ The unique writable layer allows each container to share the same underlying lay
 
 4. **What are the benefits of using Docker Compose over running containers individually?**
 
-Rather than run hundreds or thousands of containers manually each time, you can run them all with their stored parameters written in one YML file. From there, we can interact with each container instance individually as needed.
+Rather than run hundreds or thousands of containers manually each time, you can run them all with their stored parameters written in one YML file. From there, we can interact with each container instance individually as needed, without the pain of individually configuring the parameters for every instance. Furthermore, the YAML files are sharable, which supports collaboration between developers and increases efficiency. Docker Compose also caches configuration needed to create a container which Composes reuses when restarting a service that has not changed; as a result, environment changes are applied rapidly. Finally, Compose supports storing variables in the Compose file, which supports portability across environments as you can take advantage of them to customize for different environments or users.
 
 ## Notes
